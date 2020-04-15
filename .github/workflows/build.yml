@@ -19,6 +19,11 @@ jobs:
     - name: upload artifacts
       uses: actions/upload-artifact@master
       with:
+        name: configs
+        path: configs/
+    - name: upload artifacts
+      uses: actions/upload-artifact@master
+      with:
         name: game-of-life-darwin-amd64
         path: bin/game-of-life-darwin-amd64
     - name: upload artifacts
